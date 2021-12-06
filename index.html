@@ -1,3 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <link
+    href="https://fonts.googleapis.com/css?family=Comfortaa"
+    rel="stylesheet"
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <form
+    class="login_form"
+    name="loginForm"
+    method="POST"
+    id="login_form"
+    dataset="login-form"
+  >
+    <div class="form_container">
+      <label for="loginForm-email-input" class="form-label login-form-label"
+        >Логин</label
+      >
+      <input
+        name="email"
+        id="loginForm-email-input"
+        type="email"
+        class="form-input login-input"
+        required=""
+        placeholder="   example@example.com"
+      />
+
+      <label for="loginForm-password-input" class="form-label login-form-label"
+        >Пароль</label
+      >
+      <input
+        name="password"
+        id="loginForm-password-input"
+        type="password"
+        class="form-input password-input"
+        required=""
+      />
+
+      <input type="submit" class="form-login-button" value="Войти" />
+
+      <div class="reg" id="login-form-button-to-signup">Регистрация</div>
+    </div>
+  </form>
+
+  <form class="signup_form" id="signup-form" dataset="singup-form">
+    <div class="form_container">
+      <label for="signupForm-name-input" class="form-label name-form-label"
+        >Имя</label
+      >
+      <input
+        name="name"
+        id="signupForm-name-input"
+        type="name"
+        class="form-input name-input"
+        required=""
+        placeholder="   Вася"
+        pattern="[А-Яа-яA-Za-z\s-]*"
+        title="Используйте русские или латинские буквы"
+      />
+
+      <label for="signupForm-email-input" class="form-label email-form-label"
+        >E-mail</label
+      >
+      <input
+        name="email"
+        id="signupForm-email-input"
+        type="email"
+        class="form-input email-input"
+        required=""
+        placeholder="   example@example.com"
+        title="Введите email"
+      />
+
+      <label for="signupForm-phone-input" class="form-label phone-form-label"
+        >Телефон</label
+      >
+      <input
+        name="phone"
+        id="signupForm-phone-input"
+        type="text"
+        class="form-input phone-input"
+        required=""
+        placeholder="   89007778899"
+        pattern="8\d{3}\d{3}\d{2}\d{2}"
+        title="Введите телефон в формате 8**********"
+      />
+
+      <label
+        for="signupForm-password-input"
+        class="form-label password-form-label"
+        >Пароль</label
+      >
+      <input
+        name="password"
+        id="signupForm-password-input"
+        type="password"
+        class="form-input password-input"
+        required=""
+        pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
+        title="Минимум 6 символов. Обязательно наличие букв и цифр"
       />
 
       <label
