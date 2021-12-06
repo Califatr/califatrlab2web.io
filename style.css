@@ -1,0 +1,169 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  background: no-repeat center/100% 100% url("fon.png");
+  background-size: cover;
+  animation: start 1s linear;
+  font-size: 24px;
+  font-family: "Comfortaa";
+  color: white;
+  margin: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+@keyframes start {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.logo {
+  filter: invert(1);
+  width: 5%;
+  height: 5%;
+}
+header {
+  background-color: rgba(60, 52, 67, 0, 5);
+  backdrop-filter: blur(20px);
+  border-radius: 0px 0px 10px 10px;
+  font-size: 4vw;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.photo {
+  display: flex;
+  flex-direction: column;
+  font-size: 2vw;
+  background-color: rgba(60, 52, 67, 0, 5);
+  backdrop-filter: blur(20px);
+  border: solid;
+  border-color: white;
+  border-width: 2px;
+  cursor: pointer;
+  text-align: center;
+  margin: 10px;
+  padding: 2px;
+  border-radius: 10% 10% 5% 5%;
+  flex: 300px;
+  max-width: 40%;
+  min-width: 200px;
+}
+
+.actual_photo {
+  border-radius: 50%;
+  opacity: 1;
+  width: 100%;
+  height: 80%;
+  transition: 0.3s;
+}
+.actual_photo:hover {
+  border-radius: 0;
+}
+
+.date {
+  font-size: 0.5em;
+}
+
+footer {
+  background-color: rgba(60, 52, 67, 0, 5);
+  backdrop-filter: blur(20px);
+  border-radius: 30px 30px 0 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 4vw;
+}
+a {
+  color: white;
+}
+
+.form_container {
+  border-radius: 20px;
+  text-align: center;
+  background-color: rgba(60, 52, 67, 0, 5);
+  backdrop-filter: blur(20px);
+  padding: 10px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.login_form {
+  z-index: 1;
+  background: no-repeat center/100% url("fon.png");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.signup_form {
+  z-index: 1;
+  background: no-repeat center/100% url("fon.png");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.reg {
+  border: solid;
+  border-radius: 6px;
+  background-color: #b9a2ce;
+  border-color: #b9a2ce;
+  margin: 20px;
+  opacity: 0.3;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.reg:hover {
+  opacity: 1;
+}
+
+input {
+  color: white;
+  font-size: 24px;
+  border: solid;
+  border-radius: 6px;
+  background-color: #b9a2ce;
+  border-color: #b9a2ce;
+  margin: 1px;
+  transition: 0.3s;
+}
+input:hover {
+  background-color: #c5bdcc;
+}
+
+.header-login-button:hover {
+  cursor: pointer;
+}
